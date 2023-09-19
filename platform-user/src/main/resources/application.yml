@@ -1,0 +1,9 @@
+server:
+  port: 9060
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:9060
+        service: platform-user

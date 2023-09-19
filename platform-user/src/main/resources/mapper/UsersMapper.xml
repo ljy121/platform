@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ljy.platformuser.dao.UsersMapper">
+
+    <resultMap id="BaseResultMap" type="com.ljy.platformuser.domain.entity.Users">
+            <result property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="login_name" column="login_name" jdbcType="VARCHAR"/>
+            <result property="real_name" column="real_name" jdbcType="VARCHAR"/>
+            <result property="pinyin_name" column="pinyin_name" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="sex" column="sex" jdbcType="NUMERIC"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
+            <result property="telephone" column="telephone" jdbcType="VARCHAR"/>
+            <result property="mobilephone" column="mobilephone" jdbcType="VARCHAR"/>
+            <result property="id_card" column="id_card" jdbcType="VARCHAR"/>
+            <result property="worker_state" column="worker_state" jdbcType="NUMERIC"/>
+            <result property="worker_type" column="worker_type" jdbcType="NUMERIC"/>
+            <result property="extend1" column="extend1" jdbcType="VARCHAR"/>
+            <result property="extend2" column="extend2" jdbcType="VARCHAR"/>
+            <result property="extend3" column="extend3" jdbcType="VARCHAR"/>
+            <result property="extend4" column="extend4" jdbcType="VARCHAR"/>
+            <result property="e_signature" column="e_signature" jdbcType="VARCHAR"/>
+            <result property="index_code" column="index_code" jdbcType="NUMERIC"/>
+            <result property="create_worker" column="create_worker" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="latest_modify_worker" column="latest_modify_worker" jdbcType="VARCHAR"/>
+            <result property="latest_modify_time" column="latest_modify_time" jdbcType="TIMESTAMP"/>
+            <result property="isvalid" column="isvalid" jdbcType="NUMERIC"/>
+            <result property="bz1" column="bz1" jdbcType="VARCHAR"/>
+            <result property="bz2" column="bz2" jdbcType="VARCHAR"/>
+            <result property="bz3" column="bz3" jdbcType="VARCHAR"/>
+            <result property="bz4" column="bz4" jdbcType="VARCHAR"/>
+            <result property="bz" column="bz" jdbcType="VARCHAR"/>
+            <result property="is_leader" column="is_leader" jdbcType="NUMERIC"/>
+            <result property="ca_key" column="ca_key" jdbcType="VARCHAR"/>
+            <result property="worker_level" column="worker_level" jdbcType="NUMERIC"/>
+            <result property="i_first_login" column="i_first_login" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,login_name,real_name,
+        pinyin_name,password,sex,
+        email,telephone,mobilephone,
+        id_card,worker_state,worker_type,
+        extend1,extend2,extend3,
+        extend4,e_signature,index_code,
+        create_worker,create_time,latest_modify_worker,
+        latest_modify_time,isvalid,bz1,
+        bz2,bz3,bz4,
+        bz,is_leader,ca_key,
+        worker_level,i_first_login
+    </sql>
+</mapper>
